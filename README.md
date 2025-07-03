@@ -1,23 +1,32 @@
-# Saarthik - Premium Home Tuition Website
+# MyAcharya - Premium Home Tuition Website
 
-🎓 **साार्थिक शिक्षा - Meaningful Education**
+🎓 **Personal Mentorship - Traditional Wisdom, Modern Approach**
 
-A modern, responsive website for Saarthik's premium home tuition services, built with HTML, CSS, and JavaScript.
+A modern, responsive website for MyAcharya's premium home tuition services, founded by Shantanu Dwivedi. Built with HTML, CSS, and JavaScript to provide meaningful, personalized education.
 
-## 🌟 Features
+## 🌟 About MyAcharya
 
-- **Modern Design**: Clean, elegant UI with warm saffron and teal color scheme
+MyAcharya is a home tuition platform that brings the soul of ancient mentorship into modern education. Founded by Shantanu Dwivedi, it focuses on providing personal mentorship where education feels personal, not pressured.
+
+### Core Philosophy
+- **One-on-One Learning**: Because every child is different
+- **Safe, Home-Based Education**: Where students are at ease
+- **Teachers Who Care**: Like the Acharyas of our tradition
+
+## 🌟 Website Features
+
+- **Modern Design**: Clean, elegant UI with saffron and teal color scheme
 - **Fully Responsive**: Optimized for desktop, tablet, and mobile devices
 - **Multi-page Structure**: Comprehensive navigation across different sections
 - **Interactive Elements**: Smooth animations, hover effects, and form validation
-- **Cultural Touch**: Hindi taglines and Indian educational context
+- **Email Integration**: Contact forms with EmailJS integration and mailto fallback
 
 ## 📁 Project Structure
 
 ```
-saarthik-final-website/
+myacharya-website/
 ├── index.html              # Home page with hero section and overview
-├── about.html              # About Us - story, values, teaching philosophy
+├── about.html              # About Us - founder story, values, philosophy
 ├── services.html           # Services - detailed service offerings
 ├── students-parents.html   # For Students & Parents - benefits and process
 ├── tutors.html            # Join as a Tutor - application form
@@ -26,8 +35,7 @@ saarthik-final-website/
 │   └── styles.css         # Main stylesheet with responsive design
 ├── js/
 │   └── script.js          # Interactive functionality and animations
-├── images/                # Folder for website images (empty)
-├── assets/                # Folder for additional assets (empty)
+├── EMAILJS_SETUP.md       # Email integration setup guide
 └── README.md             # Project documentation
 ```
 
@@ -55,43 +63,46 @@ saarthik-final-website/
 ## 📱 Pages Overview
 
 ### 1. Home (`index.html`)
-- Hero section with tagline "Learning That's Truly Saarthik"
+- Hero section with tagline "Education That Feels Personal, Not Pressured"
 - Key features overview
 - Services summary
-- Statistics showcase
-- Process explanation
+- Statistics showcase (500+ students, 95% success rate)
+- Process explanation (4-step journey)
 - Customer testimonials
 - Call-to-action sections
 
 ### 2. About Us (`about.html`)
-- Company story and mission
+- Founder's story (Shantanu Dwivedi)
+- Journey from SS Tutors to MyAcharya
+- Company mission and vision
 - Core values (Compassion, Excellence, Trust, Innovation)
 - Teaching philosophy
-- Achievement statistics
+- Future goals and expansion plans
 
 ### 3. Services (`services.html`)
 - **Personal Home Tuition**: One-on-one sessions at home
 - **1-on-1 Mentorship**: Academic and personal guidance
 - **Progress Tracking**: Regular assessments and reports
-- Subject areas covered
-- Grade levels served
+- Subject areas covered (Math, Science, Languages, etc.)
+- Grade levels served (Class 1-12, Competitive Exams)
 
 ### 4. For Students & Parents (`students-parents.html`)
-- How Saarthik works (4-step process)
-- Benefits for students
-- Benefits for parents
+- How MyAcharya works (4-step process)
+- Benefits for students (personalized attention, stress-free learning)
+- Benefits for parents (visibility, safety, convenience)
 - Learning methodology
-- FAQ section
+- Comprehensive FAQ section
 
 ### 5. Join as a Tutor (`tutors.html`)
-- Benefits of joining Saarthik
+- Benefits of joining MyAcharya
 - Requirements and qualifications
-- Application form with fields:
-  - Name, Email, Phone, City
-  - Subject expertise
-  - Teaching experience
-  - Preferred grade levels and time slots
-- Application process overview
+- Detailed application form with fields:
+  - Personal information (Name, Email, Phone, City)
+  - Subject expertise and teaching experience
+  - Educational qualification
+  - Preferred grade levels and time slots (checkboxes)
+  - Motivation message
+- Application process overview (4 steps)
 
 ### 6. Contact Us (`contact.html`)
 - Comprehensive contact form for trial class booking
@@ -110,24 +121,27 @@ saarthik-final-website/
 
 ### Interactive Elements
 - Smooth scrolling navigation
-- Animated statistics counters
 - Form validation with custom notifications
 - Hover effects and transitions
 - Loading animations
+- Intersection Observer for fade-in animations
 
-### Forms
+### Forms & Email Integration
+- Two main forms: Contact form and Tutor application form
 - Custom styled inputs and selects
 - Hidden default checkboxes with custom styling
 - Real-time validation
+- EmailJS integration for direct email delivery
+- Mailto fallback for reliability
 - Success/error notifications
 - Mobile-optimized layouts
 
 ### Accessibility
 - Semantic HTML structure
 - Proper heading hierarchy
-- Alt text ready for images
 - Keyboard navigation support
 - High contrast ratios
+- Form labels and validation
 
 ## 🚀 Getting Started
 
@@ -145,7 +159,31 @@ saarthik-final-website/
    ```
 3. **Navigate**: Use the top navigation to explore different pages
 
+## 📧 Email Configuration
+
+The website uses the following email setup:
+- **Primary Email**: `myacharya3@gmail.com`
+- **Phone**: `+91 7078647609`
+- **WhatsApp**: `https://wa.me/917078647609`
+
+### Email Integration Options:
+1. **Current Setup**: Uses mailto fallback (opens user's email client)
+2. **EmailJS Integration**: For direct email delivery (see `EMAILJS_SETUP.md`)
+
 ## 📋 Customization Guide
+
+### Contact Information
+Update the following in all HTML files:
+- Phone numbers: `+91 7078647609`
+- Email: `myacharya3@gmail.com`
+- Service areas: Delhi NCR, Aligarh, Hathras
+- Social media links (Instagram, LinkedIn, WhatsApp)
+
+### Content Updates
+- **Statistics**: Update numbers in the stats sections
+- **Testimonials**: Replace with real customer feedback
+- **Service Areas**: Modify location information
+- **Pricing**: Update fee information in consultation
 
 ### Colors
 Update the CSS variables in `css/styles.css`:
@@ -158,15 +196,6 @@ Update the CSS variables in `css/styles.css`:
 }
 ```
 
-### Content
-- **Contact Information**: Update phone numbers and email in all HTML files
-- **Service Areas**: Modify location information in contact pages
-- **Testimonials**: Replace with real customer feedback
-- **Statistics**: Update numbers in the stats sections
-
-### Fonts
-Change the Google Fonts import in each HTML file and update the CSS font-family.
-
 ## 🔧 Browser Support
 
 - **Modern Browsers**: Chrome, Firefox, Safari, Edge (latest versions)
@@ -175,15 +204,17 @@ Change the Google Fonts import in each HTML file and update the CSS font-family.
 
 ## 📞 Contact Information
 
-- **Phone**: +91 98765 43210
-- **Email**: info@saarthik.com
-- **Service Areas**: Delhi NCR (Gurgaon, Noida, Faridabad, Ghaziabad)
+- **Phone**: +91 7078647609
+- **Email**: myacharya3@gmail.com
+- **Service Areas**: Delhi NCR (Gurgaon, Noida, Faridabad, Ghaziabad), Aligarh, Hathras
 - **Hours**: Monday - Saturday, 9:00 AM - 8:00 PM
 
 ## 📄 License
 
-© 2024 Saarthik. All rights reserved. Premium Home Tuition Services.
+© 2024 MyAcharya. All rights reserved. Premium Home Tuition Services.
 
 ---
 
-**Built with ❤️ for meaningful education**
+**Built with ❤️ for meaningful education by Shantanu Dwivedi**
+
+*"Education should feel personal, not pressured."*
